@@ -31,8 +31,8 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2 relative h-[500px] w-full rounded-2xl overflow-hidden shadow-xl">
-              <Image 
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973&auto=format&fit=crop" 
+              <Image
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973&auto=format&fit=crop"
                 alt="Our Team"
                 fill
                 className="object-cover"
@@ -46,9 +46,9 @@ export default function AboutPage() {
               </p>
               <ul className="space-y-4">
                 {[
-                  "Client-Centric Approach", 
-                  "Unmatched Market Knowledge", 
-                  "Transparent & Honest Transactions", 
+                  "Client-Centric Approach",
+                  "Unmatched Market Knowledge",
+                  "Transparent & Honest Transactions",
                   "Innovative Marketing Strategies"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-gray-800 font-medium">
@@ -69,9 +69,8 @@ export default function AboutPage() {
           <div className="w-20 h-1 bg-[#E67E22] mb-12 mx-auto"></div>
           <div className="flex flex-col items-center">
             <div className="w-48 h-48 relative rounded-full overflow-hidden shadow-xl mb-6 border-4 border-white bg-white">
-              {/* Using a professional placeholder image - you can replace this with his actual photo later */}
-              <Image 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" 
+              <Image
+                src="/IMG_1062.JPG.jpeg"
                 alt="Pradeep Gavhane"
                 fill
                 className="object-cover"
