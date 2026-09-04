@@ -1,0 +1,24 @@
+# AV Enterprises
+
+> Building Trust. Delivering Excellence. We provide premium real estate solutions to buy, sell, and rent properties.
+
+This is the main website for AV Enterprises, a premium real estate partner offering a portfolio of luxury homes, commercial spaces, and premium properties. We provide end-to-end real estate solutions tailored to your unique lifestyle and business needs.
+
+## Links
+
+- [Home](/)
+- [About Us](/about)
+- [Our Services](/services)
+- [Buy Property](/services/buy-property)
+- [Sell Property](/services/sell-property)
+- [Rent Property](/services/rent-property)
+- [Property Management](/services/property-management)
+- [Featured Properties](/properties)
+- [Contact Us](/contact)
+
+## Contact Information
+
+- **Office Address:** Shop No.17R6, Commercial Life Republic, Hinjewadi, Pune - 411057
+- **Phone:** +91 94041 65237 (Pradeep Gavhane)
+- **Email:** contact@aventerprises.com
+- **Business Hours:** Mon - Fri: 9:00 AM - 6:00 PM
