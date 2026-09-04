@@ -70,7 +70,7 @@ export default function AboutPage() {
           <div className="flex flex-col items-center">
             <div className="w-48 h-48 relative rounded-full overflow-hidden shadow-xl mb-6 border-4 border-white bg-white">
               <Image
-                src="/IMG_1062.JPG.jpeg"
+                src="/_DSC0708.JPG.jpeg"
                 alt="Pradeep Gavhane"
                 fill
                 className="object-cover"
