@@ -33,7 +33,7 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <Link href="/contact">
               <Button className="bg-gradient-to-r from-[#F4B400] via-[#E67E22] to-[#D64541] hover:opacity-90 text-white font-bold border-none shadow-md transition-opacity cursor-pointer">
-                Request a Quote
+                Free Consultation
               </Button>
             </Link>
           </div>
@@ -57,7 +57,7 @@ export default function Header() {
           <Link href="/properties" onClick={() => setIsMobileMenuOpen(false)} className="px-2 py-2 text-lg font-bold text-primary hover:text-color-orange">Properties</Link>
           <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="px-2 py-2 text-lg font-bold text-primary hover:text-color-orange">Contact</Link>
           <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-            <Button className="w-full mt-4 bg-gradient-to-r from-[#F4B400] via-[#E67E22] to-[#D64541] hover:opacity-90 text-white font-bold text-lg h-12 border-none cursor-pointer">Request a Quote</Button>
+            <Button className="w-full mt-4 bg-gradient-to-r from-[#F4B400] via-[#E67E22] to-[#D64541] hover:opacity-90 text-white font-bold text-lg h-12 border-none cursor-pointer">Free Consultation</Button>
           </Link>
         </div>
       )}

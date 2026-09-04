@@ -18,8 +18,17 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "AV Enterprises | Premium Business Solutions",
-  description: "Building Trust. Delivering Excellence. Premium construction and business solutions.",
+  title: {
+    template: "%s | AV Enterprises Real Estate",
+    default: "AV Enterprises | Premium Real Estate for Buying, Selling, and Renting",
+  },
+  description: "Find your dream property with AV Enterprises. Expert real estate consultation for buying, selling, and renting properties. Get your free consultation today.",
+  keywords: ["Real Estate", "Buy Property", "Sell Property", "Rent Property", "Property Consultation", "Real Estate Agent"],
+  openGraph: {
+    title: "AV Enterprises | Premium Real Estate",
+    description: "Expert real estate consultation for buying, selling, and renting properties.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

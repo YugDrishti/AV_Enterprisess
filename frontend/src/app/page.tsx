@@ -9,6 +9,7 @@ import { ArrowRight, Star } from "lucide-react"
 import InstagramReel from "@/components/InstagramReel"
 import PropertyModal from "@/components/PropertyModal"
 import TestimonialCarousel from "@/components/TestimonialCarousel"
+import FreeConsultationForm from "@/components/FreeConsultationForm"
 import { useState } from "react"
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       
       {/* HERO SECTION - LIGHT VERSION */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-white">
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-white">
         <div className="absolute inset-0 z-0">
           {/* Light elegant gradient background */}
           <div className="absolute inset-0 bg-gradient-to-br from-white via-orange-50/80 to-yellow-50/50 z-10" />
@@ -31,44 +32,54 @@ export default function Home() {
           />
         </div>
         
-        <div className="container mx-auto px-4 z-20 text-center pt-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <h1 className="font-heading text-5xl md:text-7xl font-bold mb-6 tracking-tight text-primary">
-              Your Premier<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4B400] via-[#E67E22] to-[#D64541]">Real Estate Partner.</span>
-            </h1>
-          </motion.div>
-          
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-gray-800 font-medium max-w-3xl mx-auto mb-10 leading-relaxed"
-          >
-            Discover an exclusive portfolio of luxury homes, commercial spaces, and premium properties. We provide end-to-end real estate solutions tailored to your unique lifestyle and business needs. Whether you are buying, selling, or renting, we build trust and deliver excellence.
-          </motion.p>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >
-            <Link href="/contact" className="w-full sm:w-auto">
-              <Button size="lg" className="bg-gradient-to-r from-[#F4B400] via-[#E67E22] to-[#D64541] text-white hover:opacity-90 w-full font-bold px-8 shadow-lg shadow-[#E67E22]/30 border-none cursor-pointer">
-                Request a Quote
-              </Button>
-            </Link>
-            <Link href="/services" className="w-full sm:w-auto">
-              <Button size="lg" variant="outline" className="bg-white text-[#E67E22] border-[#E67E22] hover:bg-orange-50 w-full font-bold px-8 shadow-sm cursor-pointer">
-                Our Services
-              </Button>
-            </Link>
-          </motion.div>
+        <div className="container mx-auto px-4 z-20 pt-32 pb-20 lg:pt-20 lg:pb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side: Text */}
+            <div className="text-left">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                <h1 className="font-heading text-5xl md:text-7xl font-bold mb-6 tracking-tight text-primary">
+                  Your Premier<br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F4B400] via-[#E67E22] to-[#D64541]">Real Estate Partner.</span>
+                </h1>
+              </motion.div>
+              
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="text-lg md:text-xl text-gray-800 font-medium max-w-xl mb-10 leading-relaxed"
+              >
+                Discover an exclusive portfolio of luxury homes, commercial spaces, and premium properties. We provide end-to-end real estate solutions tailored to your unique lifestyle and business needs. Whether you are buying, selling, or renting, we build trust and deliver excellence.
+              </motion.p>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="flex flex-col sm:flex-row gap-4 items-start"
+              >
+                <Link href="/services" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="bg-white text-[#E67E22] border-[#E67E22] hover:bg-orange-50 w-full font-bold px-8 shadow-sm cursor-pointer">
+                    Our Services
+                  </Button>
+                </Link>
+              </motion.div>
+            </div>
+
+            {/* Right side: Form */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="flex justify-center lg:justify-end w-full"
+            >
+              <FreeConsultationForm />
+            </motion.div>
+          </div>
         </div>
       </section>
 
